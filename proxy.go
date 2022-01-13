@@ -51,7 +51,7 @@ func main() {
 	frontendStaticFiles := []string{"/config.js", "/manifest.json"}
 
 	// clin-ui
-	uiHost := flag.String("ui-host", "http://0.0.0.0:2005", "clin-ui host name or ip plus the port if not 80")
+	uiHost := flag.String("clinui-host", "http://0.0.0.0:2005", "clin-ui host name or ip plus the port if not 80")
 	uiStaticPath := flag.String("clinui-staticpath", "/clinui-static", "clin-frontend development static ressources url")
 
 	flag.Parse()
