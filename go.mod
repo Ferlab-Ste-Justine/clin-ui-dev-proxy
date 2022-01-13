@@ -1,4 +1,5 @@
-module github.com/Ferlab-Ste-Justine/clin-ui-dev-proxy
+module clin-ui-dev-proxy
+replace github.com/Ferlab-Ste-Justine/clin-ui-dev-proxy clin-ui-dev-proxy
 
 go 1.18
 
