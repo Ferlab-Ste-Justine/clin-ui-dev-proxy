@@ -9,6 +9,7 @@ This solve authentification and iframe communication
 ## Requirements
 
 - go ([to install](https://go.dev/doc/install))
+- Update clin-ui `.env.development` and add `PUBLIC_URL="/clinui-static"`
 
 ## Installation
 
