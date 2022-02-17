@@ -73,6 +73,11 @@ func main() {
 		return proxyPassPath(url, c)
 	})
 
+	app.Get("/variant/*", func(c *fiber.Ctx) error {
+		url := *uiHost + "/variant/" + c.Params("*")
+		return proxyPassPath(url, c)
+	})
+
 	app.Get(*frontendStaticPath+"/*", func(c *fiber.Ctx) error {
 		url := *frontendHost + *frontendStaticPath + "/" + c.Params("*")
 		return proxyStaticFile(url, c)

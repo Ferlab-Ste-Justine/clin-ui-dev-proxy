@@ -8,22 +8,41 @@ This solve authentification and iframe communication
 
 ## Requirements
 
-- go ([to install](https://go.dev/doc/install))
-- Update clin-ui `.env.development` and add `PUBLIC_URL="/clinui-static"`
+You need either Go ([to install](https://go.dev/doc/install)) or Docker
+
+Update clin-ui `.env.development` and add `PUBLIC_URL="/clinui-static"`
 
 ## Installation
+### Command line
 
-> go install github.com/Ferlab-Ste-Justine/clin-ui-dev-proxy@latest
+    go install github.com/Ferlab-Ste-Justine/clin-ui-dev-proxy@latest
+
+### Docker
+
+1. Build the image
+
+        docker build --tag clin-ui-dev-proxy .
+
+2. make sure you can see the image
+
+        docker image ls
+
+## Development
+
+To build and run
+
+      go run proxy.go
 
 ## Run proxy
 
-> clin-ui-dev-proxy
+    go install
+    clin-ui-dev-proxy
 
 it expect the following defaults (configurable)
 
+```bash
 > clin-ui-dev-proxy --help
 
-```bash
   -clinui-host string
         clin-ui host name or ip plus the port if not 80 (default "http://0.0.0.0:2005")
   -clinui-staticpath string
