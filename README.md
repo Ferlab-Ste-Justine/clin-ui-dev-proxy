@@ -1,3 +1,7 @@
+# Deprecation
+
+This development tool is deprecated and will no longer be maintained.
+
 # clin-ui-dev-proxy
 
 ## Description
